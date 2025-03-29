@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EShop.Domain.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -14,8 +15,15 @@ public class Helpers
     {
         cardNumber = cardNumber.Replace(" ", "");
         cardNumber = cardNumber.Replace("-", "");
+
+        if (cardNumber.Length < 13)
+            throw new CardNumberTooShortException(cardNumber);
+
+        if (cardNumber.Length > 19)
+            throw new CardNumberTooLongException(cardNumber);
+
         if (!cardNumber.All(char.IsDigit))
-            return false;
+            throw new CardNumberInvalidException(cardNumber);
 
         int sum = 0;
         bool alternate = false;
@@ -35,6 +43,8 @@ public class Helpers
             alternate = !alternate;
         }
 
+        if (sum % 10 != 0)
+            throw new CardNumberInvalidException(cardNumber);
         return (sum % 10 == 0);
     }
 
@@ -62,6 +72,6 @@ public class Helpers
         if (Regex.IsMatch(cardNumber, @"^(50|5[6-9]|6\d)\d{10,17}$"))
             return "Maestro";
         else
-            return "Unknown";
+            throw new CardNumberInvalidException(cardNumber);
     }
 }
