@@ -5,13 +5,17 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopService", "EShopService\EShopService.csproj", "{813EF562-BDA1-42CA-9D6E-CDF6A05E17CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Application", "EShop.Application\EShop.Application.csproj", "{CD930B80-7D63-41EA-861A-D666160A7EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Application", "EShop.Application\EShop.Application.csproj", "{CD930B80-7D63-41EA-861A-D666160A7EEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Application.Tests", "EShop.Application.Tests\EShop.Application.Tests.csproj", "{2EDA0B6A-2508-4C71-9546-C0325DF32D68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Application.Tests", "EShop.Application.Tests\EShop.Application.Tests.csproj", "{2EDA0B6A-2508-4C71-9546-C0325DF32D68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Domain", "EShop.Domain\EShop.Domain.csproj", "{C6075FAA-631A-4494-BC17-7D138DDC3A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Domain", "EShop.Domain\EShop.Domain.csproj", "{C6075FAA-631A-4494-BC17-7D138DDC3A4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Domain.Tests", "EShop.Domain.Tests\EShop.Domain.Tests.csproj", "{2EB6C723-22B3-4BAC-BBB9-977E3E38FC73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Domain.Tests", "EShop.Domain.Tests\EShop.Domain.Tests.csproj", "{2EB6C723-22B3-4BAC-BBB9-977E3E38FC73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopService.Tests", "EShopService.Tests\EShopService.Tests.csproj", "{DFD8F612-B4FA-46DD-965F-43F792461931}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopService.IntegrationTests", "EShopService.IntegrationTests\EShopService.IntegrationTests.csproj", "{04D97910-C36B-43C4-A062-4574F40ECBDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{2EB6C723-22B3-4BAC-BBB9-977E3E38FC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EB6C723-22B3-4BAC-BBB9-977E3E38FC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EB6C723-22B3-4BAC-BBB9-977E3E38FC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD8F612-B4FA-46DD-965F-43F792461931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD8F612-B4FA-46DD-965F-43F792461931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD8F612-B4FA-46DD-965F-43F792461931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD8F612-B4FA-46DD-965F-43F792461931}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D97910-C36B-43C4-A062-4574F40ECBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D97910-C36B-43C4-A062-4574F40ECBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D97910-C36B-43C4-A062-4574F40ECBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D97910-C36B-43C4-A062-4574F40ECBDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
