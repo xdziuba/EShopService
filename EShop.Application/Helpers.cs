@@ -1,4 +1,5 @@
-﻿using EShop.Domain.Exceptions;
+﻿using EShop.Application.Services;
+using EShop.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EShop.Application;
 
-public class Helpers
+public class Helpers : ICreditCardService
 {
     public bool ValidateCard(string cardNumber)
     {
